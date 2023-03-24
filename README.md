@@ -12,7 +12,7 @@ Problem Type: multiclass classification (total of 5 different values: top,jug,mi
 
 Response Variable: Position the player played in a match. I chose the positions of each player as the response variable because positions represent the roles of the players, which is what I am trying to predict.
 
-Metric I am using to evaluate your model: Accuracy, because a false positive and a false negative are equally bad when predicting a role. Also, I've checked the counts of each position in the testing dataset and found out that each position has a similar proportion of roughly 1/5, meaning that there is no class imbalance in the data set. If I predict all data points to a single position, I would only get 1/5 accuracy. Thus, accuracy will not be misleading. Also, since the purpose of this website is for the general public, I think accuracy, which represents the proportion of data the model predicted correctly, will be easier to interpret compared to F1-Score.
+Metric I am using to evaluate your model: Accuracy, because a false positive and a false negative are equally bad when predicting a role. Both false positive and false negative means that the player did not performed like the role the player was assigned. Also, I've checked the counts of each position in the testing dataset and found out that each position has a similar proportion of roughly 1/5, meaning that there is no class imbalance in the data set. If I predict all data points to a single position, I would only get 1/5 accuracy. Thus, accuracy will not be misleading. Also, since the purpose of this website is for the general public, I think accuracy, which represents the proportion of data the model predicted correctly, will be easier to interpret compared to F1-Score.
 
 Time of prediction: Predicting roles given post-game data, so all data can be used for training.
 
@@ -42,7 +42,7 @@ Group X: Damage-dealer
 
 Group y: Support
 
-Evalution metric: Accuracy, because a false positive and a false negative are equally bad when predicting a role. Also, I've checked the counts of each position in the testing dataset and found out that each position has a similar proportion of roughly 1/5, meaning that there is no class imbalance in the data set. If I predict all data points to a single position, I would only get 1/5 accuracy. Thus, accuracy will not be misleading. Also, since the purpose of this website is for the general public, I think accuracy, which represents the proportion of data the model predicted correctly, will be easier to interpret compared to F1-Score.
+Evalution metric: Accuracy, because a false positive and a false negative are equally bad when predicting a role. Both false positive and false negative means that the player did not performed like the role the player was assigned. Also, I've checked the counts of each position in the testing dataset and found out that each position has a similar proportion of roughly 1/5, meaning that there is no class imbalance in the data set. If I predict all data points to a single position, I would only get 1/5 accuracy. Thus, accuracy will not be misleading. Also, since the purpose of this website is for the general public, I think accuracy, which represents the proportion of data the model predicted correctly, will be easier to interpret compared to F1-Score.
 
 Null Hypothesis: Our model is fair. Its precision for damager-dealers and supports are roughly the same, 
 and any differences are due to random chance.
