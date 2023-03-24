@@ -35,6 +35,8 @@ I used GridSearchCV to find the best combination of hyperparameters out of a tot
 
 Before tuning the best hyperparameters, my scores for my training dataset and my testing dataset were both around 0.81, which is a large improvement in accuracy compared to my baseline model, showing that the features I added for the final model did improve accuracy. After tuning for the best hyperparameters and passing the combination to my DecisionTreeClasifier, I reached a score of 0.970 for my training dataset and a score of 0.962 for my testing dataset. While there seems to be a slight overfitting, the accuracy for unseen data largely improved. Compared to my baseline model's score of 0.672 for unseen data, my final model's performance is a lot better where accuracy greatly improved and a lot more roles are predicted correctly. The performance also largely improved after tuning for the best hyperparameters, showing that both adding new features and finding best hyperparameters are essential for improving performance.
 
+![confusion matrix](/assets/conf_mat.png)
+
 ## Fairness Analysis
 Check fairness based on damageshare each player contributed. If a player contributed over 1/5 of the damageshare, the player is a damage-dealer, otherwise a support. Threshold set at 1/5 because there are 5 players on a team, so each player is expected to contribute a damageshare of 0.2. However, in League of Legends, not all roles are expected to contribute equal amount of damages, there are damage-dealing roles and support/tank roles, so I assigned a player as damage-dealer if the player's damageshare is larger than 0.2, otherwise a support.
 
