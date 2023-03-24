@@ -59,6 +59,7 @@ I picked Significance level of 0.01 to be highly significant and to minimize the
   
 Resulting p-value: 0.00
 
+<iframe src="assets/accuracy_diff.html" width=800 height=600 frameBorder=0></iframe>
 Result after 1000 repetitions of permutation test.
 
 Conclusion: Since my resulting p-value 0.00 is smaller than the significance level of 0.01, I reject the null hypothesis, which claims that the model is fair and its precision for damager-dealers and supports are roughly the same and any differences are due to random chance. 
