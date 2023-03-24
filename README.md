@@ -36,6 +36,7 @@ I used GridSearchCV to find the best combination of hyperparameters out of a tot
 Before tuning the best hyperparameters, my scores for my training dataset and my testing dataset were both around 0.81, which is a large improvement in accuracy compared to my baseline model, showing that the features I added for the final model did improve accuracy. After tuning for the best hyperparameters and passing the combination to my DecisionTreeClasifier, I reached a score of 0.970 for my training dataset and a score of 0.962 for my testing dataset. While there seems to be a slight overfitting, the accuracy for unseen data largely improved. Compared to my baseline model's score of 0.672 for unseen data, my final model's performance is a lot better where accuracy greatly improved and a lot more roles are predicted correctly. The performance also largely improved after tuning for the best hyperparameters, showing that both adding new features and finding best hyperparameters are essential for improving performance.
 
 ![confusion matrix](/assets/conf_mat.png)
+
 From the confusion matrix of my final model, I can see that most roles are predicted accurately, and predictions for jng and sup are extremely accurate.
 
 ## Fairness Analysis
@@ -61,6 +62,7 @@ I picked Significance level of 0.01 to be highly significant and to minimize the
 Resulting p-value: 0.00
 
 <iframe src="assets/accuracy_diff.html" width=800 height=600 frameBorder=0></iframe>
+
 Results after 1000 repetitions of permutation test. The observed difference in accuracy 0.0157 is significantly larger than the resulting differences caused by random chance.
 
 Conclusion: Since my resulting p-value 0.00 is smaller than the significance level of 0.01, I reject the null hypothesis, which claims that the model is fair and its precision for damager-dealers and supports are roughly the same and any differences are due to random chance. 
