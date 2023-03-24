@@ -40,7 +40,7 @@ Check fairness based on damageshare each player contributed. If a player contrib
 
 Group X: Damage-dealer
 
-Group y: Support
+Group Y: Support
 
 Evalution metric: Accuracy, because a false positive and a false negative are equally bad when predicting a role. Both false positive and false negative means that the player did not performed like the role the player was assigned. Also, I've checked the counts of each position in the testing dataset and found out that each position has a similar proportion of roughly 1/5, meaning that there is no class imbalance in the data set. If I predict all data points to a single position, I would only get 1/5 accuracy. Thus, accuracy will not be misleading. Also, since the purpose of this website is for the general public, I think accuracy, which represents the proportion of data the model predicted correctly, will be easier to interpret compared to F1-Score.
 
