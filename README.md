@@ -1,4 +1,4 @@
-# Prediction of role a player played in League of Legends matches.
+# Prediction of role a player played in League of Legends competitive matches.
 Orlando Fang's DSC 80 Project 5
 
 by Orlando Fang (tifang@ucsd.edu)
