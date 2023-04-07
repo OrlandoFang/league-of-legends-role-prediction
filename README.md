@@ -1,6 +1,4 @@
 # Prediction of role a player played in League of Legends competitive matches.
-Orlando Fang's DSC 80 Project 5
-
 by Orlando Fang (tifang@ucsd.edu)
 
 My exploratory data analysis on this dataset can be found [here](https://orlandofang.github.io/most-exciting-league-in-league-of-legends/).
