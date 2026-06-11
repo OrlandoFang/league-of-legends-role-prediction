@@ -1,0 +1,15 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/bundle/
+
+# Python analysis
+analysis/.venv/
+analysis/data/
+analysis/output/
+__pycache__/
+*.pyc
