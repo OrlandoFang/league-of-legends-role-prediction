@@ -6,3 +6,10 @@ _site/
 # Bundler
 .bundle/
 vendor/bundle/
+
+# Python analysis
+analysis/.venv/
+analysis/data/
+analysis/output/
+__pycache__/
+*.pyc
